@@ -16,11 +16,14 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'org.jetbrains.kotlin.jvm' version '1.2.21'
+    id "org.jetbrains.kotlin.kapt" version "1.2.21"
 }
 
 dependencies {
     compile 'org.projectlombok:lombok:1.16.20'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     testCompile 'junit:junit:4.12'
+    kapt "org.projectlombok:lombok:1.16.20"
 }
 
 // In this section you declare where to find the dependencies of your project
